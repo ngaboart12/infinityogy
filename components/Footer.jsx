@@ -12,7 +12,6 @@ function Footer() {
     <footer className="max-container padding-container bg-slate-200 py-20 px-10 w-full">
       <main>
       <div
-        data-aos="fade-up"
         className="max-w-6xl px-10 space-y-10 sm:space-y-0 sm:px-0 mx-auto md:grid-cols-2 lg:grid-cols-4 sm:gap-20 grid w-full justify-center"
       >
         <div className="flex flex-col gap-4">

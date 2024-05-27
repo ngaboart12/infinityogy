@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <div className="max-w-7xl h-fit mx-auto mt-5 items-center px-6 sm:px-10 md:px-20 w-full flex justify-between">
       <a href="/">
-        <Image src={`/image/logo2.png`} alt="logo" width={200} height={100} className="object-contain" />
+        <Image src={`/image/logo2.png`} alt="logo" width={200} height={100} priority className="object-contain" />
       </a>
       <div className="links hidden md:flex text-[#56697A]  text-[16px] gap-10 font-light items-center font-outfit">
         <a href="/" className="hover:text-[#F59620]">

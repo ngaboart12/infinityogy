@@ -9,7 +9,6 @@ import {
   WhatSay,
 } from "@/components";
 import Hero from "@/components/Hero";
-import Last from "@/components/Last";
 import SplashScreen from "@/components/SplashScreen";
 import Internship from "@/components/services/Internship";
 

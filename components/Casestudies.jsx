@@ -56,7 +56,6 @@ const CaseStudies = () => {
         </h1>
 
         <div
-          data-aos="fade-right"
           className="grid  sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-20 items-center"
         >
           {casestudies.map((item) => (
