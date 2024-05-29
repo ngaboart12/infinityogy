@@ -187,9 +187,6 @@ const Services = () => {
       id="service"
     >
       <div
-        data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
         className="relative py-10  flex-col gap-10 sm:gap-20 overflow-hidden bg-[#EEEEEE] flex max-w-7xl medium:flex-row mx-auto z-50 px-10 sm:px-20 sm:py-20  "
       >
         <div className="absolute left-0 top-0 -z-10">

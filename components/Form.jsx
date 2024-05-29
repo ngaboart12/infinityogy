@@ -65,7 +65,6 @@ const Form = () => {
   return (
     <form
       onSubmit={handelSubmit}
-      data-aos="flip-left"
       className="sm:max-w-lg mx-auto w-full flex flex-col gap-4"
     >
       <input

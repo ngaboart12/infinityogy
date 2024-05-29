@@ -53,7 +53,6 @@ const ContactUs = () => {
           </h1>
           <div className="flex flex-col  lg:flex-row items-start  md:justify-center md:items-center gap-10">
             <div
-              data-aos="fade-up"
               className="flex flex-col  w-[80%]  h-full  gap-4"
             >
               <div className="flex gap-2">
