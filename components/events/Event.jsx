@@ -26,6 +26,9 @@ const Event = () => {
       <h1 className="text-center text-[32px] text-black py-4">
         Upcoming <span className="text-orange-400"> Coding </span> Adventures
       </h1>
+      <p className="text-black/50">
+        New to talk to us?<a href="/schedule" className="text-orange-400 items-center">  Schedule a new meeting.</a>
+      </p>
       {loading ? (
         <div className="w-full flex items-center justify-center">
           <InfinitySpin width="200" color="#F59620" />
