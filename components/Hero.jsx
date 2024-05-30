@@ -38,12 +38,12 @@ function Hero() {
             >
               Reach us
             </a>
-            <a href="https://forms.gle/nsgsBKmMQasVzzuGA" target="_blank"
+            <a href="/aboutus" target="_blank"
      
               className=" px-6 py-2 border border-[#F59620] text-white
             bg-[#F59620] rounded-md"
             >
-              Apply now
+              About us
             </a>
           </div>
         </div>

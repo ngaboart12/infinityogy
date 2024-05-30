@@ -220,7 +220,7 @@ const Services = () => {
           </h1>
           <p className="text-[14px] text-black text-base font-light w-full font-outfit ">
             Explore our comprehensive range of services designed to meet your
-            needs and exceed your expectations. F
+            needs and exceed your expectations.
           </p>
           <button className="flex items-center justify-between  gap-2 mt-6 py-2.5 px-4 w-fit max-w-[200px] font-outfit  rounded-md text-white bg-[#F59620] group transition-all duration-300">
             Discover More{" "}

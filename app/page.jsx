@@ -9,6 +9,7 @@ import {
   WhatSay,
 } from "@/components";
 import Hero from "@/components/Hero";
+import Partners from "@/components/Partners";
 import SplashScreen from "@/components/SplashScreen";
 import Internship from "@/components/services/Internship";
 
@@ -43,6 +44,7 @@ export default function Home() {
           <CaseStudies />
           <Aboutus />
           <WhatSay />
+          <Partners />
           <ContactUs />
           <Footer />
         </>

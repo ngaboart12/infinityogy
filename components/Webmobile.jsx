@@ -30,7 +30,7 @@ const WebMobile = () => {
             high-quality, user-friendly, and engaging mobile apps. Our skilled
             app developers and UI/UX designers can assist.
           </p>
-
+          <a href="/services">
           <button className="flex items-center justify-between rounded-lg   text-white py-3.5 px-5 w-fit gap-2 mt-6 group transition-all bg-[#F59620] duration-300">
             {" "}
             Learn More{" "}
@@ -47,6 +47,7 @@ const WebMobile = () => {
               />
             </svg>
           </button>
+          </a>
         </div>
         <div className="relative pt-8">
           <button className="flex rounded-tr-xl items-center gap-3 px-5 py-4 absolute   right-0 top-0 bg-[#FFECD5] text-[#F59620]">
