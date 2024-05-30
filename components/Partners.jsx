@@ -6,7 +6,7 @@ const parterns = {
         '/image/mtn-logo.jpg',
         '/image/oracle.png',
         '/image/dnr-logo.jpeg',
-        '/image/paypack.png',
+        '/image/PAYPACK.png',
         '/image/mega_consult_logo.png',
         '/image/risa.jpg',
         '/image/airtel-logo.png',
