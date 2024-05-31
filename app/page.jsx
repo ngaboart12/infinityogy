@@ -9,6 +9,7 @@ import {
   WhatSay,
 } from "@/components";
 import Hero from "@/components/Hero";
+import Last from "@/components/Last";
 import Partners from "@/components/Partners";
 import SplashScreen from "@/components/SplashScreen";
 import Internship from "@/components/services/Internship";
@@ -47,6 +48,7 @@ export default function Home() {
           <Partners />
           <ContactUs />
           <Footer />
+          <Last />
         </>
       )}
     </main>

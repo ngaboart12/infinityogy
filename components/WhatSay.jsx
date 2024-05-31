@@ -24,13 +24,13 @@ function WhatSay() {
     },
     {
       url: `/image/say4.webp`,
-      disc: "gconsectetur adipisicing elit. Assumenda nobis quisquam eaque a sequi dignissimos ipsa ratione ab sapiente voluptatum sunt minima esse explicabo reprehenderit et maiores placeat, sit eos.",
+      disc: "Your team has delivered an outstanding software solution that perfectly aligns with our requirements. The project's timely completion and the quality of work were remarkable. The new system has greatly enhanced our productivity and operational capabilities. We are excited about future projects together and highly endorse your services. Thank you for your excellent work!",
       name: "Edson",
       title: "CEO TUZA",
     },
     {
       url: `/image/say5.jpg`,
-      disc: "Editor subtract rectangle auto project flatten content opacity hand horizontal. Effect pen draft subtract style background mainarrange ipsum. Pen editor arrange pen invite reesizing verticalduplicate. Pixel italic editor main project effect invite share.Hand strikethrough create vertical rectangle inspect auto",
+      disc: "I am incredibly impressed with the software solution provided by your company. The project was completed on time and exceeded our expectations. The seamless integration and user-friendly interface have significantly improved our operational efficiency. I look forward to future collaborations and highly recommend your services to others. Thank you for a job well done!",
       name: "Ben",
       title: "Human resource(NeTi)",
     },
