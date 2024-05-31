@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { FaArrowCircleDown } from "react-icons/fa";
-
 import Image from "next/image";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -53,6 +53,17 @@ function Hero() {
         <FaArrowCircleDown size={30}/>
         </a>
       </div>
+      <Link href={'/offers'}>
+      <div className="fixed items-center p-2 bottom-5 text-black right-5 bg-[#E5E5E5] rounded-xl z-10 justify-end border-white w-[20vw] shadow-2xl">
+        {/* <p>
+        🎉Exciting news!🎉 Here comes a great opportunity from our company. Software Development Training Program which will help people with or without any foundation in software development yet you are committed to dive in. Register now here.
+      </p> */}
+        <p>
+        🎉Exciting news!🎉 Great opportunity from our company. Professional Software Development Training Program. 
+        </p>
+        <a href="#ddd" className="text-[#F59620] cursor-pointer">Register now here.</a>
+      </div>
+      </Link>
     </div>
   );
 }

@@ -10,13 +10,13 @@ const parterns = [
         alt: "mtn",
     },
     {
-        id: 3,
+        id: 2,
         imgSrc: '/image/oracle.png',
         web: 'https://www.oracle.com/',
         alt: "oracle",
     },
     {
-        id: 2,
+        id: 3,
         imgSrc: '/image/red-logo.svg',
         web: 'https://int.dnrpartners.com/ ',
         alt: "dnr",
@@ -64,17 +64,17 @@ const parterns = [
         alt: "cosmas",
     },
     {
+        id: 12,
+        imgSrc: '/image/auca.png',
+        web: 'https://auca.ac.rw/',
+        alt: "auca",
+    },
+    {
         id: 10,
         imgSrc: '/image/eaur.jpg',
         web: 'https://eaur.ac.rw/',
         alt: "east",
     },
-    {
-        id: 12,
-        imgSrc: '/image/auca-logo.png',
-        web: 'https://auca.ac.rw/',
-        alt: "auca",
-    }
 ]
 const Partners = () => {
   return (
@@ -85,7 +85,7 @@ const Partners = () => {
             <h1 className='text-[32px] text-[#F59620] font-bold text-center py-10'>Our Partners</h1>
             <div className='grid grid-cols-2 md:grid-cols-4 gap-10'>
                 { parterns.map((link) => (
-                    <div key={link} className=''>
+                    <div key={link.id} className=''>
                         <Link href={link.web} target='_blank' >
                             <Image src={link.imgSrc} alt={link.alt} width={200} height={200} />
                         </Link>
