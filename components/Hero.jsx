@@ -61,7 +61,9 @@ function Hero() {
         <p>
         🎉Exciting news!🎉 Great opportunity from our company. Professional Software Development Training Program. 
         </p>
-        <a href="#ddd" className="text-[#F59620] cursor-pointer">Register now here.</a>
+        <a href="https://forms.gle/nsgsBKmMQasVzzuGA" 
+        target="_blank"
+        className="text-[#F59620] cursor-pointer">Register now here.</a>
       </div>
       </Link>
     </div>
