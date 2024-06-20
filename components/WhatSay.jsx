@@ -53,8 +53,8 @@ function WhatSay() {
   };
 
   return (
-    <div className="max-container padding-container flex max-h-[250vh]  w-full flex-col md:flex-row ">
-      <div className="w-full px-4 md:max-w-1/2 flex bg-[#E5E5E5] pt-[105px]">
+    <div className="max-container padding-container flex max-h-[250vh] w-full flex-col md:flex-row ">
+      <div className="w-full px-4 md:max-w-1/2 flex bg-[#E5E5E5] ">
         <div className="max-w-lg mx-auto flex flex-col   max-h-[100vh] gap-6 items-center md:items-start justify-end">
           <Image
             src={says[currentIndex].url}
@@ -118,7 +118,7 @@ function WhatSay() {
           WHAT THEY SAY ABOUT US
         </h1>
 
-        <div className=" grid grid-cols-2     sm:grid-cols-2  gap-x-4   lg:gap-x-10 gap-y-20 py-10 ">
+        <div className=" grid grid-cols-2 sm:grid-cols-2 gap-x-4 lg:gap-x-10 gap-y-20 py-10 ">
           {/* start part */}
           {says.map((item, index) => {
             return (

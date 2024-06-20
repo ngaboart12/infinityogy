@@ -12,6 +12,7 @@ import Hero from "@/components/Hero";
 import Last from "@/components/Last";
 import Partners from "@/components/Partners";
 import SplashScreen from "@/components/SplashScreen";
+import { VideoPart } from "@/components/VideoPart";
 import Internship from "@/components/services/Internship";
 
 import { usePathname } from "next/navigation";
@@ -44,6 +45,7 @@ export default function Home() {
           <Internship/>
           <CaseStudies />
           <Aboutus />
+          <VideoPart />
           <WhatSay />
           <Partners />
           <ContactUs />
