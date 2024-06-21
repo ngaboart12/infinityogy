@@ -5,11 +5,10 @@ import React from 'react'
 export const VideoPart = () => {
 
     const videos = [
-        'https://www.youtube.com/embed/zpOULjyy-n8?rel=0',
-        'https://www.youtube.com/embed/zpOULjyy-n8?rel=0',
-        'https://www.youtube.com/embed/zpOULjyy-n8?rel=0',
-        'https://www.youtube.com/embed/zpOULjyy-n8?rel=0',
-        'https://www.youtube.com/embed/zpOULjyy-n8?rel=0'
+        'https://www.youtube.com/embed/4RBGMByxMPM?rel=0',
+        'https://www.youtube.com/embed/sKFDlTk4XIk?rel=0',
+        'https://www.youtube.com/embed/o-SfK1XPsU4?rel=0',
+        'https://www.youtube.com/embed/WI3lVZmVLgk?rel=0',
     ]
 
     return (
