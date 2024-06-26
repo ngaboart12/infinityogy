@@ -44,7 +44,7 @@ const CaseStudies = () => {
       type: "UI/UX Development",
       image: `/image/legalconnect.png`,
       date: "October 2023",
-      link: "https://www.facebook.com"
+      link: "/"
     },
     {
       id: 5,
@@ -135,7 +135,7 @@ const CaseStudies = () => {
                 <span className="text-[#56697A] text-[14px] font-outfit">
                   {item.type}
                 </span>
-                <Link href={item.link} target="_blank">
+                <Link href={item.link} target="_blank" rel="noreferrer">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"

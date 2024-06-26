@@ -21,7 +21,7 @@ function OurWorks() {
       client: "Legal",
       type: "Mobile App Development",
       image: `/image/legalconnect.png`,
-      date: "Augst 2023",
+      date: "August 2023",
       status: "web"
     },
     {
@@ -34,25 +34,25 @@ function OurWorks() {
       status: "web  "
     },
     {
-      id: 2,
+      id: 3,
       name: "Infinity Tech Driver",
       client: "Infinity Tech solution",
-      type: "Mobile App Development",
+      type: "Payment Gateway",
       image: `/image/driver.png`,
       date: "June 2023",
       status: "gate"
     },
     {
-      id: 3,
-      name: "Tuza podcast",
+      id: 4,
+      name: "Tuza Podcast UI/UX Design",
       client: "Tuza Rwanda",
-      type: "UI/UX,Developement",
+      type: "UI/UX Developement",
       image: `/image/goweb.png`,
       date: "October 2023",
       status: "ui"
     },
     {
-      id: 4,
+      id: 5,
       name: "Company management",
       client: "Infinity",
       type: "Web Development",
@@ -61,16 +61,16 @@ function OurWorks() {
       status: "web"
     },
     {
-      id: 5,
-      name: "Tuza podcast",
+      id: 6,
+      name: "Tuza Podcast",
       client: "Tuza Rwanda",
-      type: "UI/UX,Developement",
+      type: "Payment Gateway",
       image: `/image/project4.jpg`,
       date: "October 2023",
       status: "gate"
     },
     {
-      id: 6,
+      id: 7,
       name: "Infinity Tech Driver",
       client: "Infinity Tech solution",
       type: "Mobile App Development",
@@ -79,7 +79,7 @@ function OurWorks() {
       status: "ui"
     },
     {
-      id: 7,
+      id: 8,
       name: "Saga Bay",
       client: "Saga",
       type: "Web Development",
@@ -88,13 +88,81 @@ function OurWorks() {
       status: "web"
     },
     {
-      id: 8,
+      id: 9,
       name: "Infinitydriver",
       client: "Infinity",
       type: "Web Development",
       image: `/image/drivera.png`,
       date: "November 2023",
       status: "web"
+    },
+    {
+      id: 10,
+      name: "SAGA BAY Hotel Management System",
+      client: "SAGA BAY Restaurant",
+      type: "Wep Application",
+      image: `/image/sagabay.png`,
+      date: "March 2024",
+      link: "https://resto-portal.up.railway.app/",
+      status: "web"
+    },
+    {
+      id: 11,
+      name: "Properties Investment Web Application",
+      client: "Properties Investment Rwanda",
+      type: "Web Application",
+      image: `/image/properties.png`,
+      date: "October 2023",
+      link: "https://www.propertiesinvestment.rw/",
+      status: "web"
+    },
+    {
+      id: 3,
+      name: "Infinity Tech Driver",
+      client: "Infinity Tech solution",
+      type: "Mobile App Development",
+      image: `/image/driver.png`,
+      date: "June 2023",
+      status: "mobile"
+    },
+    {
+      id: 13,
+      name: "Mega Consulting Website",
+      client: "Mega Consulting Company",
+      type: "Web Application",
+      image: `/image/mega.png`,
+      date: "October 2023",
+      link: "https://www.megaconsulti.com/",
+      status: "web"
+    },
+    {
+      id: 14,
+      name: "Cosmas Massage House Website",
+      client: "Cosmas Massage House Company",
+      type: "Website",
+      image: `/image/cosmas.png`,
+      date: "October 2023",
+      link: "https://cosmashouseltd.com/",
+      status: "web"
+    },
+    {
+      id: 15,
+      name: "All Cleaning website and system UI/UX Design",
+      client: "All Cleaning Company",
+      type: "UI/UX Development",
+      image: `/image/cleaning.png`,
+      date: "October 2023",
+      link: "/all_cleaning",
+      status: "ui"
+    },
+    {
+      id: 16,
+      name: "Tuza Podcast",
+      client: "Tuza Rwanda",
+      type: "Mobile Application",
+      image: `/image/project4.jpg`,
+      date: "October 2023",
+      status: "mobile"
     },
   ];
   const [status, setStatus] = useState("web");
@@ -112,7 +180,7 @@ function OurWorks() {
   const buttonLable = [
     {name:"Web and Web Apps",id:1,status:"web"},
     {name:"UI/UX design",id:3,status:'ui'},
-    {name:"Mobile Applications",id:4,status:'web'},
+    {name:"Mobile Applications",id:4,status:'mobile'},
     {name:"Payment Gateways",id:2,status:"gate"},
   ];
 
@@ -120,9 +188,7 @@ function OurWorks() {
     <div>
       <Navbar />
       {/* <Navbar2 /> */}
-
-      {/* end navbar */}
-      <div className="flex flex-col gap-6 justify-center w-full items-center pt-5">
+      <div className="max-container padding-container flex flex-col gap-6 justify-center w-full items-center pt-5">
         <h1
           data-aos="fade-down"
           className="text-[40px] text-center text-[#5F7487] font-bold leading-10 "
@@ -152,10 +218,6 @@ function OurWorks() {
               className="relative flex max-w-[100vh] flex-col gap-[20px]"
             >
               <div className="h-[50vh]">
-                <div className=" absolute p-2 rounded-md mt-4  right-2 bg-[#FBECD8] text-[#F59620]">
-                  <span className="font-outfit">{item.date}</span>
-                </div>
-
                 <Image
                   src={item.image}
                   className="h-full object-cover rounded-md"

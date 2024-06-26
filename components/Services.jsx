@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 const Services = () => {
   useEffect(() => {
@@ -222,7 +223,7 @@ const Services = () => {
             Explore our comprehensive range of services designed to meet your
             needs and exceed your expectations.
           </p>
-          <button className="flex items-center justify-between  gap-2 mt-6 py-2.5 px-4 w-fit max-w-[200px] font-outfit  rounded-md text-white bg-[#F59620] group transition-all duration-300">
+          <Link href={'/services'} className="flex items-center justify-between  gap-2 mt-6 py-2.5 px-4 w-fit max-w-[200px] font-outfit  rounded-md text-white bg-[#F59620] group transition-all duration-300">
             Discover More{" "}
             <svg
               width="20"
@@ -236,7 +237,7 @@ const Services = () => {
                 fill="white"
               />
             </svg>
-          </button>
+          </Link>
         </div>
         {/* our services */}
 
