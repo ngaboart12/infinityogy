@@ -4,38 +4,87 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const CaseStudies = () => {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
+  useEffect(() => {    AOS.init({ duration: 2000 });
   }, []);
   const casestudies = [
     {
       id: 1,
-      name: "Company Management",
+      name: "Company Management System",
       client: "Tuza Rwanda",
       type: "Web Application",
       image: `/image/employee2.png`,
       date: "August 2023",
+      link: "https://infinity-management.netlify.app/"
     },
     {
       id: 2,
-      name: "SAGA BAY",
-      client: "SAGA BAY Restraunt",
+      name: "SAGA BAY Hotel Management System",
+      client: "SAGA BAY Restaurant",
       type: "Wep Application",
-      image: `/image/WAITERPORTAL.png`,
+      image: `/image/sagabay.png`,
       date: "March 2024",
+      link: "https://resto-portal.up.railway.app/"
     },
     {
       id: 3,
-      name: "Tuza podcast",
+      name: "Properties Investment Web Application",
+      client: "Properties Investment Rwanda",
+      type: "Web Application",
+      image: `/image/properties.png`,
+      date: "October 2023",
+      link: "https://www.propertiesinvestment.rw/"
+    },
+    {
+      id: 4,
+      name: "Tuza Podcast UI/UX Design",
       client: "Tuza Rwanda",
       type: "UI/UX Development",
       image: `/image/legalconnect.png`,
       date: "October 2023",
+      link: "https://www.facebook.com"
+    },
+    {
+      id: 5,
+      name: "Infinity Driver",
+      client: "Infinity Tech Solution",
+      type: "Web Application",
+      image: `/image/infinityDrive.png`,
+      date: "October 2023",
+      link: "https://infinitydriver.rw/"
+    },
+    {
+      id: 6,
+      name: "Mega Consulting Website",
+      client: "Mega Consulting Company",
+      type: "Web Application",
+      image: `/image/mega.png`,
+      date: "October 2023",
+      link: "https://www.megaconsulti.com/"
+    },
+    {
+      id: 7,
+      name: "Cosmas Massage House Website",
+      client: "Cosmas Massage House Company",
+      type: "UI/UX Development",
+      image: `/image/cosmas.png`,
+      date: "October 2023",
+      link: "https://cosmashouseltd.com/"
+    },
+    {
+      id: 8,
+      name: "All Cleaning website and system UI/UX Design",
+      client: "All Cleaning Company",
+      type: "UI/UX Development",
+      image: `/image/cleaning.png`,
+      date: "October 2023",
+      link: "/all_cleaning"
     },
   ];
   return (
+    <div className="bg-[#E5E5E5] ">
     <div className="max-w-6xl mx-auto flex px-10 justify-center py-20 w-full ">
       <div className=" flex flex-col items-center gap-4 md:gap-10">
         <div>
@@ -48,7 +97,7 @@ const CaseStudies = () => {
         </div>
         <h1
           data-aos="fade-left"
-          className="text-[24px] sm:text-[36px] w-[300px] sm:w-[620px] text-center font-bold font-outfit"
+          className="text-[24px] sm:text-[36px] w-[300px] sm:w-[620px] text-black text-center font-bold font-outfit"
           style={{ lineHeight: 1 }}
         >
           We develop <span className="text-[#F59620] capitalize">products</span> that
@@ -58,7 +107,7 @@ const CaseStudies = () => {
         <div
           className="grid  sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-20 items-center"
         >
-          {casestudies.map((item) => (
+          { casestudies.map((item) => (
             <div
               key={item.id}
               className="relative flex max-w-[100vh] flex-col gap-[20px]"
@@ -86,7 +135,7 @@ const CaseStudies = () => {
                 <span className="text-[#56697A] text-[14px] font-outfit">
                   {item.type}
                 </span>
-                <a href="#">
+                <Link href={item.link} target="_blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -99,12 +148,20 @@ const CaseStudies = () => {
                       fill="black"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           ))}
         </div>
+        <div className=" py-4">
+          <p className="text-3xl text-black">In need of one of the above projects?</p>
+          <div className="flexCenter py-4">
+          <Link href={'#contactus'} className=" text-black border border-[#F59620] p-2 hover:bg-[#F59620] hover:text-white">Contact Us</Link>
+          <Link href={'/schedule'} className="bg-[#F59620] text-white p-2 mx-3 hover:text-black hover:bg-transparent hover:border hover:border-[#F59620]">Schedule a meet with us</Link>
+          </div>
+        </div>
       </div>
+    </div>
     </div>
   );
 };
