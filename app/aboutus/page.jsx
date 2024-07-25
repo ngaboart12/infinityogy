@@ -12,7 +12,7 @@ function AboutusPage() {
   return (
     <div className="">
       {/* navbar */}
-      <Navbar />
+      <Navbar2 />
       {/* end navbar */}
       <div className="flex flex-col gap-6 justify-center w-full items-center ">
         <div className="mt-[50px]">

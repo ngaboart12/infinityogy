@@ -186,7 +186,7 @@ function OurWorks() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar2 />
       {/* <Navbar2 /> */}
       <div className="max-container padding-container flex flex-col gap-6 justify-center w-full items-center pt-5">
         <h1

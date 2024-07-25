@@ -1,12 +1,12 @@
 "use client"
-import { Footer, Navbar } from '@/components'
+import { Footer, Navbar, Navbar2 } from '@/components'
 import React from 'react'
 import { InlineWidget } from 'react-calendly'
 
 const page = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar2 />
       <div>
         <h2 className='mt-4 text-2xl text-center text-[#F59620]'>Schedule a meeting with us</h2>
       </div>

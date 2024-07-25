@@ -1,12 +1,15 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Image from "next/image";
 import Link from "next/link";
+import SingleProject from "./projects/SingleProject";
 
 const CaseStudies = () => {
+  const [openProeject,setOpenProejct] = useState(false)
+  const [currentProject,setCurrentProject] = useState(0)
   useEffect(() => {    AOS.init({ duration: 2000 });
   }, []);
   const casestudies = [
@@ -15,76 +18,91 @@ const CaseStudies = () => {
       name: "Company Management System",
       client: "Tuza Rwanda",
       type: "Web Application",
-      image: `/image/employee2.png`,
+      image: [`/image/employee2.png`,``],
       date: "August 2023",
-      link: "https://infinity-management.netlify.app/"
+      link: "https://infinity-management.netlify.app/",
+      desciription: "Our Company Management System is a robust and comprehensive solution designed to streamline your business operations and enhance productivity. Whether you're a small business or a large enterprise, our platform offers a suite of tools to manage various aspects of your company efficiently."
     },
     {
       id: 2,
       name: "SAGA BAY Hotel Management System",
       client: "SAGA BAY Restaurant",
       type: "Wep Application",
-      image: `/image/sagabay.png`,
+      image: [`/image/sagabay.png`],
       date: "March 2024",
-      link: "https://resto-portal.up.railway.app/"
+      link: "https://resto-portal.up.railway.app/",
+      desciription: "Welcome to SAGA BAY Hotel Management System, an all-inclusive platform designed to streamline and enhance the management of your hotel operations. From reservations to customer service, our system offers a suite of tools to ensure your hotel runs smoothly and efficiently, providing an exceptional experience for your guests."
     },
     {
       id: 3,
       name: "Properties Investment Web Application",
       client: "Properties Investment Rwanda",
       type: "Web Application",
-      image: `/image/properties.png`,
+      image: [`/image/properties.PNG`,`/image/proper1.png`,`/image/proper2.png`,`/image/proper3.png`],
       date: "October 2023",
-      link: "https://www.propertiesinvestment.rw/"
+      link: "https://www.propertiesinvestment.rw/",
+      desciription: "Our Properties Investment Web Application is a comprehensive platform designed to revolutionize the way you buy, sell, and rent properties. Whether you're looking for your dream home, a rental property, or even vehicles like cars, our application offers a seamless experience tailored to meet your needs."
     },
     {
       id: 4,
       name: "Tuza Podcast UI/UX Design",
       client: "Tuza Rwanda",
       type: "UI/UX Development",
-      image: `/image/legalconnect.png`,
+      image: [`/image/legalconnect.png`],
       date: "October 2023",
-      link: "/"
+      link: "/",
+      desciription: "Tuza Podcast aims to offer an engaging and user-friendly platform for podcast enthusiasts. Our UI/UX design focuses on creating an immersive experience that enhances discovery, listening, and interaction with your favorite podcasts."
     },
     {
       id: 5,
       name: "Infinity Driver",
       client: "Infinity Tech Solution",
       type: "Web Application",
-      image: `/image/infinityDrive.png`,
+      image: [`/image/infinityDrive.png`,`/image/driver1.png`,`/image/driver2.png`],
       date: "October 2023",
-      link: "https://infinitydriver.rw/"
+      link: "https://infinitydriver.rw/",
+      desciription: "At Infinity Drive, we make the journey to obtaining your provisional driving license easy and straightforward. Our platform provides all the resources you need to understand the requirements and successfully complete the necessary steps to get your provisional license."
     },
     {
       id: 6,
       name: "Mega Consulting Website",
       client: "Mega Consulting Company",
       type: "Web Application",
-      image: `/image/mega.png`,
+      image: [`/image/mega.PNG`],
       date: "October 2023",
-      link: "https://www.megaconsulti.com/"
+      link: "https://www.megaconsulti.com/",
+      desciription: "Welcome to Mega Consulting, your trusted partner in delivering expert solutions for business growth and strategic success. Our website is designed to reflect our commitment to excellence and provide an intuitive experience for clients seeking top-tier consulting services."
     },
     {
       id: 7,
       name: "Cosmas Massage House Website",
       client: "Cosmas Massage House Company",
       type: "UI/UX Development",
-      image: `/image/cosmas.png`,
+      image: [`/image/cosmas.PNG`],
       date: "October 2023",
-      link: "https://cosmashouseltd.com/"
+      link: "https://cosmashouseltd.com/",
+      desciription: "Welcome to Cosmas Massage House, your serene retreat for relaxation and wellness. Our website is designed to offer a calming and intuitive experience, allowing you to explore our range of massage services and book appointments with ease."
     },
     {
       id: 8,
       name: "All Cleaning website and system UI/UX Design",
       client: "All Cleaning Company",
       type: "UI/UX Development",
-      image: `/image/cleaning.png`,
+      image: [`/image/cleaning.png`],
       date: "October 2023",
-      link: "/all_cleaning"
+      link: "/all_cleaning",
+      desciription: "All Cleaning is dedicated to providing top-notch cleaning services with a user-friendly online platform that facilitates easy booking, service management, and customer engagement. Our UI/UX design aims to create an efficient, intuitive, and aesthetically pleasing experience for both clients and service providers."
     },
   ];
+
+  const handelSelectProject=(index)=>{
+    setCurrentProject(index)
+    setOpenProejct(true)
+  
+  }
   return (
-    <div className="bg-[#E5E5E5] ">
+    <>
+        <div className=" bg-gradient-to-br from-[white] to-[#f2f2f2] ">
     <div className="max-w-6xl mx-auto flex px-10 justify-center py-20 w-full ">
       <div className=" flex flex-col items-center gap-4 md:gap-10">
         <div>
@@ -107,29 +125,30 @@ const CaseStudies = () => {
         <div
           className="grid  sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-20 items-center"
         >
-          { casestudies.map((item) => (
+          { casestudies.map((item,index) => (
             <div
               key={item.id}
-              className="relative flex max-w-[100vh] flex-col gap-[20px]"
+              className="relative cursor-pointer flex max-w-[100vh] flex-col gap-[20px]"
             >
-              <div className="h-[60vh] ">
+              <div   onClick={()=> handelSelectProject(index)} className="h-[45vh]  ">
                 <div className=" absolute p-2 rounded-md mt-4  right-2 bg-[#FBECD8] text-[#F59620]">
                   <span className="font-outfit">{item.date}</span>
                 </div>
 
                 <Image
-                  src={item.image}
+                  src={item.image[0]}
                   alt=""
                   className="w-full h-full object-cover rounded-md"
                   width={400}
                   height={0}
+                
                 />
               </div>
               <div className="flex flex-col">
                 <span className="text-[#56697A] text-[12px] font-outfit">
                   CLIENT: <span className="text-black">{item.client}</span>
                 </span>
-                <span className="text-[24px] font-bold text-black font-outfit">
+                <span className="text-[18px] font-bold text-black font-outfit">
                   {item.name}
                 </span>
                 <span className="text-[#56697A] text-[14px] font-outfit">
@@ -163,6 +182,9 @@ const CaseStudies = () => {
       </div>
     </div>
     </div>
+    <SingleProject setOpenProejct={setOpenProejct} openProeject={openProeject} data={casestudies[currentProject]} />
+    </>
+
   );
 };
 
