@@ -66,7 +66,7 @@ function Hero() {
             🎉Exciting news!🎉 Great opportunity from our company. Professional
             Software Development Training Program.
           </span>
-          <a href="" className="py-2 flex items-center justify-center rounded-[12px] w-full bg-white">
+          <a href="https://forms.gle/nsgsBKmMQasVzzuGA" className="py-2 flex items-center justify-center rounded-[12px] w-full bg-white">
             <span>Join us Now</span>
           </a>
         </div>

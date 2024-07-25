@@ -35,9 +35,9 @@ export default function Home() {
 
   return (
     <main className="flex flex-col justify-center overflow-hidden">
-      {/* {isLoading && isHome ? (
+      {isLoading && isHome ? (
         <SplashScreen />
-      ) : ( */}
+      ) : (
         <>
           <Hero />  
           <Services />
@@ -52,7 +52,7 @@ export default function Home() {
           <Footer />
           <Last />
         </>
-      {/* )} */}
+       )} 
     </main>
   );
 }
