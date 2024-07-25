@@ -33,14 +33,14 @@ function Hero() {
             <span className="text-[#ffffff]">"</span>
           </h1>
           <p className="text-[#dbdbdb] font-[400] text-center text-[18px] mt-2  ">
-            {/* Innovate , Navigate, Elevate */}
-            Transforming your ideas into reality with our expert tech services.
+            Innovate , Navigate, Elevate
+           
           </p>
           <div className=" flex  gap-4 mt-6">
             <a
               href="#contactus"
               className=" px-8 py-2 border border-[#F59620] text-[#F59620]
-             hover:text-white hover:bg-[#F59620] rounded-[6px]"
+             hover:text-white hover:bg-[#F59620] "
             >
               Reach us
             </a>
@@ -48,7 +48,7 @@ function Hero() {
               href="/aboutus"
               target="_blank"
               className=" px-9 py-2 border border-[#F59620] text-white
-            bg-[#F59620] rounded-[6px]"
+            bg-[#F59620] "
             >
               About us
             </a>
