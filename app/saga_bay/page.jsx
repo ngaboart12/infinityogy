@@ -1,4 +1,4 @@
-import { Navbar } from "@/components";
+import { Navbar, Navbar2 } from "@/components";
 import Image from "next/image";
 
 
@@ -8,7 +8,7 @@ const page = () => {
             <head>
                 <title>SAGA BAY MS | Infinity Tech Solution</title>
             </head>
-            <Navbar />
+            <Navbar2 />
             <div className="max-container padding-container py-6">
             <div className="py-4">
                 <h2 className="bg-[#e09942]  p-2">SAGA BAY HOTEL MANAGEMENT SYSTEM</h2>

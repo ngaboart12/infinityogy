@@ -46,3 +46,10 @@ html {
   }
   
 }
+.wordScroll::-webkit-scrollbar{
+  width: 3px;
+}
+.wordScroll::-webkit-scrollbar-thumb{
+  width: 3px;
+  background: rgb(225, 250, 174);
+}

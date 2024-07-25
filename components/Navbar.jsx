@@ -12,25 +12,25 @@ const Navbar = () => {
   return (
     <div className="max-w-7xl h-fit mx-auto mt-5 items-center px-6 sm:px-10 md:px-20 w-full flex justify-between">
       <a href="/">
-        <Image src={`/image/logo2.png`} alt="logo" width={200} height={100} priority className="object-contain" />
+        <Image src={`/image/logo.png`} alt="logo" width={200} height={100} priority className="object-contain" />
       </a>
-      <div className="links hidden md:flex text-[#56697A]  text-[16px] gap-10 font-light items-center font-outfit">
-        <a href="/" className="text-[#56697A] no-underline hover:text-[#F59620]">
+      <div className="links hidden md:flex font- text-[#ffffff]  text-[16px] gap-10 font-[500] items-center font-outfit">
+        <a href="/" className="text-[#ffffff] no-underline hover:text-[#F59620]">
           Home
         </a>
-        <a href="/ourworks" className="text-[#56697A] no-underline hover:text-[#F59620]">
+        <a href="/ourworks" className="text-[#ffffff] no-underline hover:text-[#F59620]">
           Our works
         </a>
-        <a href="/services" className="text-[#56697A] no-underline hover:text-[#F59620]">
+        <a href="/services" className="text-[#ffffff] no-underline hover:text-[#F59620]">
           Services
         </a>
-        <a href="/offers" className="text-[#56697A] no-underline hover:text-[#F59620]">
+        <a href="/offers" className="text-[#ffffff] no-underline hover:text-[#F59620]">
           Offers
         </a>
-        <a href="/event" className="text-[#56697A] no-underline hover:text-[#F59620]">
+        <a href="/event" className="text-[#ffffff] no-underline hover:text-[#F59620]">
           Events
         </a>
-        <a href="/aboutus" className="text-[#56697A] no-underline hover:text-[#F59620]">
+        <a href="/aboutus" className="text-[#ffffff] no-underline hover:text-[#F59620]">
           About Us
         </a>
         <a

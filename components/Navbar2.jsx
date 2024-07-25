@@ -23,8 +23,8 @@ function Navbar2() {
       <a href="/">
         <Image src={`/image/logo2.png`} alt="" width={200} height={100} />
       </a>
-      <div className="links hidden md:flex text-[#56697A]  text-[16px] gap-10 font-light items-center font-outfit">
-        <a href="/" className="hover:text-[#F59620]">
+      <div className="links hidden md:flex text-[#000]  text-[16px] gap-10 font-light items-center font-outfit">
+        <a href="/" className="hover:text">
           Home
         </a>
         <a href="/ourworks" className="hover:text-[#F59620]">
