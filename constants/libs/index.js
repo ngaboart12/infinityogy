@@ -75,9 +75,9 @@ export const TEAMWORKERS = [
         email: ""
     },
     {
-        imageSrc: "/image/edson.jpg",
+        imageSrc: "/image/ngabo.jpg",
         name: "Edson Ntwali",
-        position: "Software Developer",
+        position: "Customer service relations",
         email: ""
     },
     {
